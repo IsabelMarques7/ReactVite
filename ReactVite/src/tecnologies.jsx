@@ -17,7 +17,7 @@ export const Tecnologies = () => {
         <>
             <Menu/>
             <section className={style['wrap-tec']}>
-                <h1>TEC´s</h1>
+                <h1>Tecnologias</h1>
                <div className={style['wrap-btns-tec']}>
                 <button className={style.btnTec} onClick={() => setShow('axios')}>AXIOS</button>
                 <button className={style.btnTec} onClick={() => setShow('nodeJs')}>NODE JS</button>
@@ -28,12 +28,12 @@ export const Tecnologies = () => {
                 <button className={style.btnTec} onClick={() => setShow('all')}>All tec´s</button>
                </div>
                 <div className={style['wrap-cards-tec']}>
-                   {show === 'axios' && <Card title='AXIOS' imgSrc={axiosImg} desc='Sou o HTML'/>}
-                   {show === 'nodeJs' && <Card title='nodeJs' imgSrc={nodeJsImg} desc='Sou o CSS'/>}
-                   {show === 'reactRouterDom' && <Card title='reactRouterDom' imgSrc={reactRouterDomImg} desc='Sou o JAVASCRIPT'/>}
-                   {show === 'react' && <Card title='REACT JS' imgSrc={reactImg} desc='Sou o REACT'/>}
-                   {show === 'vite' && <Card title='vite' imgSrc={viteImg} desc='Sou o CSS'/>}
-                   {show === 'npm' && <Card title='npm' imgSrc={npmImg} desc='Sou o CSS'/>}
+                   {show === 'axios' && <Card title='AXIOS' imgSrc={axiosImg} desc='Biblioteca HTTP.'/>}
+                   {show === 'nodeJs' && <Card title='nodeJs' imgSrc={nodeJsImg} desc=' Ambiente JavaScript servidor.'/>}
+                   {show === 'reactRouterDom' && <Card title='reactRouterDom' imgSrc={reactRouterDomImg} desc='Renderização React no navegador.'/>}
+                   {show === 'react' && <Card title='REACT JS' imgSrc={reactImg} desc='Biblioteca UI interativa.'/>}
+                   {show === 'vite' && <Card title='vite' imgSrc={viteImg} desc=' Framework web rápido.'/>}
+                   {show === 'npm' && <Card title='npm' imgSrc={npmImg} desc=' Gerenciador pacotes Node.js.'/>}
                    {show === 'all' && 
                    <>
                    <Card title='AXIOS' imgSrc={axiosImg} desc='Sou o axios'/> 

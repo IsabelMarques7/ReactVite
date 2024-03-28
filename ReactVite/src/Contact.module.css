@@ -1,45 +1,74 @@
-.sectionCalc{
-    margin-top: 80px;
-    width: 100%;
-    height: auto;
-    padding-top: 2vh;
-}
+/* Contact.module.css */
 
-.wrapCalc{
+.wrap-all-contact {
+    max-width: 1200px;
+    margin-left: 0px;
+    padding: 50px;
+  }
+  
+  .wrapH1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .wrapTwoDivs {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2vh;
-    
-}
-
-.wrapInputsCalc{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1vw;
-    
-}
-.inpStyle{
-    border: none;
-    border-radius: 999px;
-    padding: 7px 10px;
-    background-color: var(--bg-secondary);
-    color: #ffff;
-    
-}
-
-.wrapEach{
-    background-color: var(--bg-secondary);
-    padding: 2rem;
-    margin-bottom: 4vh;
-    border-radius: 5px;
-    
-}
-
-.wrapEach:hover{
-    box-shadow: var(--color-shadow);
+    justify-content: space-between;
+  }
+  
+  .wrapMap {
+    flex: 1;
+    margin-left: 90px;
+  }
+  
+  .inputsDiv {
+    max-width: 800px;
+  }
+  
+  .wrapLabelInput {
+    margin-bottom: 15px;
+    margin-right: 200px;
+  }
+  
+  .labels {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .inputS1,
+  .txtArea {
    
-}
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .btnTec {
+    background-color: #0c0a09;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btnTec:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para o mapa */
+  .leaflet-container {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para o link do Google Maps */
+  .popup-content a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  

@@ -1,40 +1,53 @@
-.sectionCalc{
-    margin-top: 80px;
-    width: 100%;
-    height: auto;
-    padding-top: 2vh;
-}
-
-.wrapCalc{
+:root {
+    --text-title: #ffff;
+    --text-p: #0c0a09;
+    --bg-primary: #d1c089;
+    --bg-secondary: #151101;
+    --bg-third: #eac388;
+    --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --color-shadow: rgba(51, 185, 219, 0.315) 0px 5px 15px;
+  }
+  
+  /* Calc.module.css */
+  
+  .sectionCalc {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2vh;
-}
-
-.wrapInputsCalc{
+    min-height: 100vh;
+    background-color: var(--bg-primary); /* Usando a cor de fundo primária */
+  }
+  
+  .wrapCalc {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .wrapInputsCalc {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 1vw;
-}
-.inpStyle{
-    border: none;
-    border-radius: 999px;
-    padding: 7px 8px;
-    background-color: var(--bg-secondary);
-    color: #ffff;
-}
-
-.wrapEach{
-    background-color: var(--bg-secondary);
-    padding: 1rem;
-    margin-bottom: 4vh;
-    border-radius: 5px;
-}
-
-.wrapEach:hover{
-    box-shadow: var(--color-shadow);
-}
+    gap: 10px;
+    background-color: var(--bg-secondary); /* Usando a cor de fundo secundária */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+  }
+  
+  .inpStyle {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--text-p); /* Usando a cor do texto p */
+  }
+  
+  .wrapEach {
+    margin-top: 20px;
+    background-color: var(--bg-third); /* Usando a cor de fundo terciária */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+  }
+  
