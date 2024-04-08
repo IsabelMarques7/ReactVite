@@ -10,6 +10,7 @@ import App from './App.jsx'
 import { Tecnologies } from './tecnologies.jsx';
 import { Calc } from './Calc.jsx';
 import { Contact } from './contact.jsx';
+import { RaM } from './RickAndMorty.jsx'; 
 
 import './index.css'
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element:  <Contact />,
+  },
+  {
+    path: "/RaM",
+    element: <RaM/>,
   },
   {
     path: "/tec",
